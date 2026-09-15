@@ -11,7 +11,7 @@
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Maddog Mobile Mechanics",
-        "image": "https://example.com/maddog-logo.jpg",
+        "image": "https://raw.githubusercontent.com/thisguyyo/maddog-mobile-mechanics/main/logo.png",
         "description": "24/7 mobile auto repair and roadside diagnostics in Guntown, MS",
         "address": {
             "@type": "PostalAddress",
@@ -60,7 +60,7 @@
         nav {
             background-color: #1a252f;
             color: #fff;
-            padding: 1rem 0;
+            padding: 0.5rem 0;
             position: sticky;
             top: 0;
             z-index: 100;
@@ -77,9 +77,19 @@
         }
 
         .nav-brand {
-            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-size: 1.3rem;
             font-weight: bold;
             color: #e74c3c;
+            text-decoration: none;
+        }
+
+        .nav-logo {
+            height: 50px;
+            width: auto;
+            max-width: 50px;
         }
 
         .nav-links {
@@ -140,6 +150,13 @@
             margin: 0 auto;
             position: relative;
             z-index: 1;
+        }
+
+        .hero-logo {
+            height: 120px;
+            width: auto;
+            margin-bottom: 1rem;
+            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
         }
 
         .hero h1 {
@@ -679,6 +696,14 @@
                 display: block;
             }
 
+            .nav-logo {
+                height: 40px;
+            }
+
+            .hero-logo {
+                height: 80px;
+            }
+
             .hero h1 {
                 font-size: 2rem;
             }
@@ -721,7 +746,10 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <div class="nav-brand">🐕 Maddog Mobile Mechanics</div>
+            <a href="#home" class="nav-brand">
+                <img src="logo.png" alt="Maddog Mobile Mechanics Logo" class="nav-logo">
+                Maddog Mobile Mechanics
+            </a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -737,7 +765,8 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <h1>🐕 Maddog Mobile Mechanics</h1>
+            <img src="logo.png" alt="Maddog Mobile Mechanics Logo" class="hero-logo">
+            <h1>Maddog Mobile Mechanics</h1>
             <p>Professional Auto Repair Comes Directly to You</p>
             <p style="font-size: 1.1rem; margin-bottom: 2rem;">24/7 Mobile Service • Fast Diagnostics • Honest Assessments</p>
             <div class="hero-buttons">
