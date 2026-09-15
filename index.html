@@ -538,6 +538,29 @@
             text-decoration: underline;
         }
 
+        .payment-methods {
+            display: flex;
+            gap: 1rem;
+            margin-top: 0.8rem;
+            flex-wrap: wrap;
+        }
+
+        .payment-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: #f0f0f0;
+            color: #333;
+            padding: 0.5rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .payment-badge i {
+            font-size: 1.1rem;
+        }
+
         /* Contact Form */
         .contact-form {
             background: #f8f9fa;
@@ -980,8 +1003,18 @@
                         <div class="contact-icon"><i class="fas fa-credit-card"></i></div>
                         <div class="contact-details">
                             <h3>Payment Methods</h3>
-                            <p>Cash & Alternative Payments</p>
-                            <p>No Credit Cards</p>
+                            <p>We accept multiple payment options for your convenience</p>
+                            <div class="payment-methods">
+                                <div class="payment-badge">
+                                    <i class="fas fa-money-bill-wave"></i> Cash
+                                </div>
+                                <div class="payment-badge">
+                                    <i class="fas fa-credit-card"></i> Credit Card
+                                </div>
+                                <div class="payment-badge">
+                                    <i class="fas fa-credit-card"></i> Debit Card
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1024,7 +1057,7 @@
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Services</h4>
+                    <h3>Services</h3>
                     <ul>
                         <li><a href="#services">General Repair</a></li>
                         <li><a href="#services">Diagnostics</a></li>
